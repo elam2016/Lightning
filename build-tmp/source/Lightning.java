@@ -49,11 +49,11 @@ public void mousePressed()
 	clicks++;
 	if (clicks == 10)
 	{
-		background(255, 0, 0, 100);
+		background(255, 255, 255, 100);
 		clicks = 0;
 		if (clicks == 0)
 		{
-			background(0, 0, 0, 20);
+			background(100, 100, 100, 80);
 		}
 	}
 
