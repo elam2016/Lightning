@@ -15,7 +15,7 @@ void setup()
 }
 void draw()
 {
-	
+	drawClouds();
 }
 
 void drawLightning()
@@ -30,7 +30,6 @@ void drawLightning()
 		startY = endY;
 		transparency -= 2000;
 	}
-	drawClouds();
 }
 
 void drawClouds()
