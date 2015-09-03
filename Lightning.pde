@@ -47,30 +47,19 @@ void mousePressed()
 {
 	drawLightning();
 	drawClouds();
-	//flash();
 	startX = mouseX;
 	startY = 0;
 	endX = 200;
 	endY = 400;
 	transparency = ((int)(Math.random()*100) + 150);
-}
-
-void flash()
-{
-	while (numClicks < 10)
+	numClicks++;
+	if (numClicks == 10)
 	{
-		drawLightning();
-		drawClouds();
-		numClicks++;
-		if (numClicks == 10)
-		{
-			background(255);
-			numClicks = -1;
-		}
-		if (numClicks == 0)
-		{
-			background(0);
-			numClicks = -1;
-		}
+		background(255);
+		numClicks = -1;
+	}
+	if (numClicks == 0)
+	{
+		background(0);
 	}
 }
